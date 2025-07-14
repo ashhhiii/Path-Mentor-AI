@@ -44,10 +44,6 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for
 - [Issue Tracker](https://github.com/yourusername/pathmentor/issues)
 - [Community Forum](https://community.pathmentor.com)
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 *Empowering your career journey, one step at a time.*
