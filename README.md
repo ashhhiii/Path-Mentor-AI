@@ -1,11 +1,8 @@
 
-# AI Career Coach
-
-![AI Career Coach Banner](https://github.com/user-attachments/assets/eee79242-4056-4d19-b655-2873788979e1)
 
 ## Overview
 
-AI Career Coach is a full-stack web application that helps users advance their careers with AI-powered tools. Users can generate resumes, cover letters, and prepare for interviews using interactive quizzes and analytics. The app is built with Next.js, NeonDB, Tailwind CSS, Prisma, Inngest, and Shadcn UI.
+Path-mentorAI  is a full-stack web application that helps users advance their careers with AI-powered tools. Users can generate resumes, cover letters, and prepare for interviews using interactive quizzes and analytics. The app is built with Next.js, NeonDB, Tailwind CSS, Prisma, Inngest, and Shadcn UI.
 
 ## Features
 
@@ -29,8 +26,8 @@ AI Career Coach is a full-stack web application that helps users advance their c
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/piyush-eon/ai-career-coach.git
-cd ai-career-coach
+git clone https://github.com/ashhhiii/Path-Mentor-AI/
+cd path-mentorAI
 ```
 
 ### 2. Install Dependencies
@@ -72,8 +69,6 @@ npm run dev
 pnpm dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000) to view the app.
-
 ## Project Structure
 
 - `app/` - Next.js app directory (routes, layouts, pages)
@@ -100,16 +95,7 @@ Visit [http://localhost:3000](http://localhost:3000) to view the app.
 4. Push to your branch (`git push origin feature/your-feature`)
 5. Open a Pull Request
 
-.
 
-## Credits
-
-- [Piyush Eon](https://github.com/piyush-eon) - Project Author
-- [YouTube Tutorial](https://youtu.be/UbXpRv5ApKA)
-
----
-
-For any questions or support, please open an issue or contact the maintainer.
 - [Issue Tracker](https://github.com/yourusername/pathmentor/issues)
 - [Community Forum](https://community.pathmentor.com)
 
