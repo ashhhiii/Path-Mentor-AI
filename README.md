@@ -1,46 +1,115 @@
-# PathMentor
 
-PathMentor is a comprehensive platform designed to help users navigate their career journeys with personalized mentorship, curated resources, and actionable guidance.
+# AI Career Coach
+
+![AI Career Coach Banner](https://github.com/user-attachments/assets/eee79242-4056-4d19-b655-2873788979e1)
+
+## Overview
+
+AI Career Coach is a full-stack web application that helps users advance their careers with AI-powered tools. Users can generate resumes, cover letters, and prepare for interviews using interactive quizzes and analytics. The app is built with Next.js, NeonDB, Tailwind CSS, Prisma, Inngest, and Shadcn UI.
 
 ## Features
 
-- **Personalized Mentorship:** Connect with experienced mentors in your field.
-- **Curated Learning Paths:** Access structured roadmaps for various career tracks.
-- **Resource Library:** Explore articles, videos, and tools to boost your skills.
-- **Progress Tracking:** Monitor your growth and achievements.
-- **Community Support:** Join discussions and share experiences with peers.
+- **AI Resume Builder:** Create and manage professional resumes.
+- **AI Cover Letter Generator:** Generate tailored cover letters for job applications.
+- **Interview Preparation:** Take mock interviews and quizzes, view performance analytics.
+- **User Dashboard:** Track your progress and manage your documents.
+- **Onboarding:** Guided onboarding for new users.
+- **Authentication:** Secure sign-in/sign-up with Clerk.
+
+## Tech Stack
+
+- **Frontend:** Next.js, React, Tailwind CSS, Shadcn UI
+- **Backend:** Next.js API routes, Prisma ORM, NeonDB (Postgres)
+- **Authentication:** Clerk
+- **AI Integration:** Gemini API
+- **Background Jobs:** Inngest
 
 ## Getting Started
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/yourusername/pathmentor.git
-    cd pathmentor
-    ```
+### 1. Clone the Repository
 
-2. **Install dependencies:**
-    ```bash
-    npm install
-    ```
+```bash
+git clone https://github.com/piyush-eon/ai-career-coach.git
+cd ai-career-coach
+```
 
-3. **Run the application:**
-    ```bash
-    npm start
-    ```
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+pnpm install
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env` file in the root directory and add the following variables:
+
+```env
+DATABASE_URL=your_neon_db_url
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/onboarding
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/onboarding
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+### 4. Set Up the Database
+
+Run Prisma migrations to set up your database schema:
+
+```bash
+npx prisma migrate dev --name init
+```
+
+### 5. Start the Development Server
+
+```bash
+npm run dev
+# or
+pnpm dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) to view the app.
+
+## Project Structure
+
+- `app/` - Next.js app directory (routes, layouts, pages)
+- `actions/` - Server actions for business logic
+- `components/` - Reusable UI components
+- `data/` - Static data (FAQs, features, etc.)
+- `hooks/` - Custom React hooks
+- `lib/` - Utilities, Prisma client, helpers
+- `prisma/` - Prisma schema and migrations
+- `public/` - Static assets
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npx prisma studio` - Open Prisma Studio
 
 ## Contributing
 
-We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes
+4. Push to your branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
 
-## Roadmap
+.
 
-- [ ] Add more career tracks
-- [ ] Integrate AI-driven recommendations
-- [ ] Mobile app support
+## Credits
 
-## Resources
+- [Piyush Eon](https://github.com/piyush-eon) - Project Author
+- [YouTube Tutorial](https://youtu.be/UbXpRv5ApKA)
 
-- [Official Documentation](docs/)
+---
+
+For any questions or support, please open an issue or contact the maintainer.
 - [Issue Tracker](https://github.com/yourusername/pathmentor/issues)
 - [Community Forum](https://community.pathmentor.com)
 
